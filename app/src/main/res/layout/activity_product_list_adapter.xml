@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backhround_radius_15dp_white"
+    android:elevation="5dp"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="18dp"
+    android:layout_marginEnd="18dp"
+    android:layout_marginBottom="6dp"
+    tools:context=".listproduct.ProductListAdapter">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_product"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/product_02_01"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/circleImageView5dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50sp"
+            android:layout_height="60sp"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/ic_price_tag_price_svgrepo_com"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/layoutRigh"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/categroryTv"
+                style="@style/TextBlack.size14spBolt"
+                android:ellipsize="end"
+                android:text="@string/brand_name" />
+
+            <TextView
+                android:id="@+id/productNameTV"
+                style="@style/TextBlack.size12sp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:text="@string/product_name" />
+
+            <TextView
+                android:id="@+id/ratingTV"
+                style="@style/TextContent.Small.Black"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:text="@string/dummyrating"
+                app:drawableStartCompat="@drawable/ic_baseline_star_24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutRigh"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+            <TextView
+                style="@style/TextBlack.size14spBolt"
+                android:layout_width="match_parent"
+                android:textAlignment="textEnd"
+                android:text="@string/price"
+                android:ellipsize="end"/>
+            <TextView
+                android:id="@+id/priceTV"
+                style="@style/PriceText"
+                android:layout_width="match_parent"
+                android:textAlignment="textEnd"
+                android:text="@string/xxxxxx"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

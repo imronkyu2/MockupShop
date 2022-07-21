@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Mockup Shop</string>
+    <string name="title_text">Fashion Pria Dan Wanita</string>
+    <string name="content_text">Kaos Jersey Lari Running Runner CustomGRATISSS:\n
+        -pasang logo\n
+        -pasang tulisan/nama\n
+        -ganti warna\nSpesifikasi Kaos Jersey Lari Running Runner Custom:\n
+        </string>
+    <string name="product_description">Deskripsi Produku:</string>
+    <string name="price">Harga</string>
+    <string name="brand_name">Brand Name</string>
+    <string name="product_name">Product Name</string>
+    <string name="add_to_bag">Add to bag</string>
+    <string name="xxxxxx">xxxxxx</string>
+    <string name="dummyrating">4.5</string>
+    <string name="detile_product">Detile Product</string>
+    <string name="terms_and_conditions">Syarat dan ketentuan</string>
+    <string name="Profile">Profile</string>
+    <string name="my_name">Imron Nanda Marpaung</string>
+    <string name="my_email">imron.nanda@mhs.pelitabangsa.ac.id</string>
+    <string name="size">Ukuran Yang Tersedia:</string>
+
+</resources>

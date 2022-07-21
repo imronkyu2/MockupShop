@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/header_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:elevation="5dp"
+            android:paddingEnd="8dp"
+            android:orientation="horizontal"
+            tools:ignore="RtlSymmetry">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:title="@string/title_text"
+                app:titleTextColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/iv_listView"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="8dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_visualization_list_svgrepo_com" />
+
+            <RelativeLayout
+                android:id="@+id/iv_profile"
+                android:layout_width="40dp"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/my_foto" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list_product"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        tools:listitem="@layout/activity_product_grid_adapter"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        android:layout_below="@+id/header_title_layout"
+        android:layoutAnimation="@anim/layout_animation_item_up_to_down"/>
+</RelativeLayout>
